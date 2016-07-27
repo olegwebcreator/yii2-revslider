@@ -1,0 +1,21 @@
+{
+    "name": "webcreator/yii2-revslider",
+    "description": "Smple slider widget",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","slider","revolution"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Oleg Nazarov",
+            "email": "oleg.webcreator@yandex.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "webcreator\\revslider\\": ""
+        }
+    }
+}
