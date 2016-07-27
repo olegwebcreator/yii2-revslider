@@ -3,6 +3,7 @@
     "description": "Smple slider widget",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","slider","revolution"],
+    "homepage": "https://github.com/olegwebcreator/yii2-revslider",
     "license": "BSD-3-Clause",
     "authors": [
         {
