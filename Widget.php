@@ -5,6 +5,11 @@ use Yii;
 use yii\helpers\Html;
 use yii\helpers\Json;
 
+use common\modules\banner\models\BannerSearch;
+
+$searchModel = new BannerSearch();
+$dataProvider = $searchModel -> search( Yii :: $app -> request -> queryParams );
+$banners = $dataProvider -> getModels();
 
 /**
  * This is just an example.
@@ -34,6 +39,11 @@ class Widget extends \yii\base\Widget
     public $clientOptions = [];
 
     /**
+     * @var array items for banner
+     */
+    public $items = [];
+
+    /**
      * @inheritdoc
      */
     public function init()
@@ -56,7 +66,20 @@ class Widget extends \yii\base\Widget
         $content = ob_get_clean();
         echo Html::beginTag('div', $this->options) . "\n";
         echo Html::beginTag('div', $this->innerOptions) . "\n";
-        echo $content;
+        echo Html :: ul( $items, [
+                'item' => function( $item, $index )
+                {
+                    return Html :: tag(
+                        'li',
+                        $this -> render( 'index', [ 'item' => $item ] ),
+                        [
+                            'data' => [
+                                'transition' => 'slidehorizontal', 'slotamount' => '5',
+                                'masterspeed' => $item -> masterspeed,
+                                'title' => $item -> title
+                            ]
+                        ] );
+                } ] ) . "\n";
         echo Html::endTag('div') . "\n";
         echo Html::endTag('div') . "\n";
     }
