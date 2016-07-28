@@ -14,23 +14,24 @@ class Banner extends Model
     public $bgImgTitle;
     public $masterspeed;
     public $enabled;
-    public $transition;
-    public $slotamount;
+    public $transition = 'slidehorizontal';
+    public $slotamount = 5;
     public $updated;
     public $bannerslides = [];
 
     /**
      * Banner constructor.
-     * @param array $id
+     * @param $id
      * @param $title
      * @param $bgImg
      * @param $bgImgTitle
      * @param $masterspeed
-     * @param int $enabled
-     * @param null $created
-     * @param null $updated
+     * @param null $enabled
+     * @param null $transition
+     * @param null $slotamount
      */
-    public function __construct( $id, $title, $bgImg, $bgImgTitle, $masterspeed, $enabled = 1, $transition = 5, $slotamount = 5)
+    public function __construct( $id, $title, $bgImg, $bgImgTitle, $masterspeed,
+                                 $enabled = null, $transition = null, $slotamount = null)
     {
         $this->id = $id;
         $this->title = $title;
