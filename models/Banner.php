@@ -17,7 +17,7 @@ class Banner extends Model
     public $transition = 'slidehorizontal';
     public $slotamount = 5;
     public $updated;
-    public $bannerslides = [];
+    public $slides = [];
 
     /**
      * Banner constructor.
