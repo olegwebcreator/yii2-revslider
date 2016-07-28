@@ -82,7 +82,7 @@ class Widget extends \yii\base\Widget
                         $this -> render('index', ['item'=>$item]),
                         [
                             'data' => [
-                                'transition' => $tem->transition,
+                                'transition' => $item->transition,
                                 'slotamount' => $item->slotamount,
                                 'masterspeed' => $item -> masterspeed,
                                 'title' => $item -> title
