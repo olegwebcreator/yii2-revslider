@@ -60,6 +60,7 @@ class Widget extends \yii\base\Widget
         $content = ob_get_clean();
         echo Html::beginTag('div', $this->options) . "\n";
         echo Html::beginTag('div', $this->innerOptions) . "\n";
+      
         echo Html :: ul( $this->items, [
                 'item' => function( $item, $index )
                 {
@@ -74,6 +75,7 @@ class Widget extends \yii\base\Widget
                             ]
                         ] );
                 } ] ) . "\n";
+      
         echo $content;
         echo Html::endTag('div') . "\n";
         echo Html::endTag('div') . "\n";
