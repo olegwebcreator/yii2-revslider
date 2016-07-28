@@ -17,6 +17,18 @@ class Banner extends Model
     public $created;
     public $updated;
     public $bannerslides = [];
+
+    /**
+     * Banner constructor.
+     * @param array $id
+     * @param $title
+     * @param $bgImg
+     * @param $bgImgTitle
+     * @param $masterspeed
+     * @param int $enabled
+     * @param null $created
+     * @param null $updated
+     */
     public function __construct( $id, $title, $bgImg, $bgImgTitle, $masterspeed, $enabled = 1, $created = null, $updated = null)
     {
         $this->id = $id;
@@ -30,6 +42,9 @@ class Banner extends Model
 
     }
 
+    /**
+     * @return array
+     */
     public function rules()
     {
         return [

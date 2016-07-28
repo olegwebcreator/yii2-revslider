@@ -61,10 +61,13 @@ class Widget extends \yii\base\Widget
     {
         $banners = [];
 
-        foreach ($this->items as $item)
-        {
-            $banners[] = new Banner( $item['id'], $item['title'], $item['bgImg'], $item['bgImgTitle'], $item['masterspeed']);
+        foreach ($this->items as $item) {
+            if ($item['enabled'] == 1) {
+                $banners[] = new Banner($item['id'], $item['title'], $item['bgImg'],
+                    $item['bgImgTitle'], $item['masterspeed'], $item['enabled']);
+            }
         }
+        
         $content = ob_get_clean();
         echo Html::beginTag('div', $this->options) . "\n";
         echo Html::beginTag('div', $this->innerOptions) . "\n";
