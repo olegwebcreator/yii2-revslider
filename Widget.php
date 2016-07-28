@@ -63,19 +63,19 @@ class Widget extends \yii\base\Widget
 
         foreach ($this->items as $item)
         {
+            var_dump($item);
             if ($item['enabled'] == 1)
             {
                 $banners[] = new Banner($item['id'], $item['title'], $item['bgImg'],
                     $item['bgImgTitle'], $item['masterspeed'],
                     $item['enabled'], $item['transition'], $item['slotamount']);
-                $banners[] -> slides = $item['slides'];
             }
         }
 
         $content = ob_get_clean();
         echo Html::beginTag('div', $this->options) . "\n";
         echo Html::beginTag('div', $this->innerOptions) . "\n";
-        var_dump($banners);
+
         echo Html :: ul( $banners, [
                 'item' => function($item, $index)
                 {
