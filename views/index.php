@@ -1,10 +1,17 @@
 <?php
 	use yii\helpers\Html;
-?>
-	
-	<img src='<?= $item -> bgImg ?>' alt='slidebg' data-bgfit='cover' data-bgposition='center center' data-bgrepeat='no-repeat'>
-	<div class='slider-caption container<?=( $item -> id == 2 ? ' captionCenter' : '')?>'>
-		<?php	
+
+	echo Html::img($item->bgImg, [
+		'alt' => $item->bgImgTitle,
+		'data' => [
+			'bgfit' => 'cover',
+			'bgposition' => 'center center',
+			'bgrepeat' => 'no-repeat'
+		]
+	]) . "\n";
+
+	echo Html::beginTag('div', ['class' => 'slider-caption container']) . "\n";
+	echo 'test';
 			foreach ( $item -> bannerslides as $slide )
 			{
 		?>
