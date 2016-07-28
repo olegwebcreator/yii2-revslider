@@ -74,6 +74,7 @@ class Widget extends \yii\base\Widget
                             ]
                         ] );
                 } ] ) . "\n";
+        echo $content;
         echo Html::endTag('div') . "\n";
         echo Html::endTag('div') . "\n";
 
