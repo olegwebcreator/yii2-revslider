@@ -5,6 +5,8 @@ use Yii;
 use yii\helpers\Html;
 use yii\helpers\Json;
 
+use webcreator\revslider\models\Banner;
+
 /**
  * This is just an example.
  */
@@ -57,11 +59,17 @@ class Widget extends \yii\base\Widget
      */
     public function run()
     {
+        $banners = [];
+
+        foreach ($this->items as $item)
+        {
+            $banners[] = new Banner( $item['id'], $item['title'], $item['bgImg'], $item['bgImgTitle'], $item['masterspeed']);
+        }
         $content = ob_get_clean();
         echo Html::beginTag('div', $this->options) . "\n";
         echo Html::beginTag('div', $this->innerOptions) . "\n";
-      
-        echo Html :: ul( $this->items, [
+
+        echo Html :: ul( $banners, [
                 'item' => function( $item, $index )
                 {
                     return Html :: tag(
@@ -75,7 +83,6 @@ class Widget extends \yii\base\Widget
                             ]
                         ] );
                 } ] ) . "\n";
-      
         echo $content;
         echo Html::endTag('div') . "\n";
         echo Html::endTag('div') . "\n";

@@ -1,10 +1,8 @@
 <?php
 	use yii\helpers\Html;
 ?>
-<?php
-	var_dump($item);
-?>
-<img src='<?= $item -> bgImg ?>' alt='slidebg' data-bgfit='cover' data-bgposition='center center' data-bgrepeat='no-repeat'>
+	
+	<img src='<?= $item -> bgImg ?>' alt='slidebg' data-bgfit='cover' data-bgposition='center center' data-bgrepeat='no-repeat'>
 	<div class='slider-caption container<?=( $item -> id == 2 ? ' captionCenter' : '')?>'>
 		<?php	
 			foreach ( $item -> bannerslides as $slide )
