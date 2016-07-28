@@ -14,6 +14,7 @@
 
 	foreach ( $item -> slides as $slide )
 	{
+        var_dump($slide);
         $dataOptions = [];
 
         if ( $slide -> hoffset )
