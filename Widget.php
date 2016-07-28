@@ -61,26 +61,29 @@ class Widget extends \yii\base\Widget
     {
         $banners = [];
 
-        foreach ($this->items as $item) {
-            if ($item['enabled'] == 1) {
+        foreach ($this->items as $item)
+        {
+            if ($item['enabled'] == 1)
+            {
                 $banners[] = new Banner($item['id'], $item['title'], $item['bgImg'],
                     $item['bgImgTitle'], $item['masterspeed'], $item['enabled']);
             }
         }
-        
+
         $content = ob_get_clean();
         echo Html::beginTag('div', $this->options) . "\n";
         echo Html::beginTag('div', $this->innerOptions) . "\n";
 
         echo Html :: ul( $banners, [
-                'item' => function( $item, $index )
+                'item' => function($item, $index)
                 {
-                    return Html :: tag(
+                    return Html::tag(
                         'li',
-                        $this -> render( 'index', [ 'item' => $item ] ),
+                        $this -> render('index', ['item'=>$item]),
                         [
                             'data' => [
-                                'transition' => 'slidehorizontal', 'slotamount' => '5',
+                                'transition' => $tem->transition,
+                                'slotamount' => $item->slotamount,
                                 'masterspeed' => $item -> masterspeed,
                                 'title' => $item -> title
                             ]

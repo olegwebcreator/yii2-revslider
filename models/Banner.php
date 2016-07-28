@@ -14,7 +14,8 @@ class Banner extends Model
     public $bgImgTitle;
     public $masterspeed;
     public $enabled;
-    public $created;
+    public $transition;
+    public $slotamount;
     public $updated;
     public $bannerslides = [];
 
@@ -29,7 +30,7 @@ class Banner extends Model
      * @param null $created
      * @param null $updated
      */
-    public function __construct( $id, $title, $bgImg, $bgImgTitle, $masterspeed, $enabled = 1, $created = null, $updated = null)
+    public function __construct( $id, $title, $bgImg, $bgImgTitle, $masterspeed, $enabled = 1, $transition = 5, $slotamount = 5)
     {
         $this->id = $id;
         $this->title = $title;
@@ -37,8 +38,8 @@ class Banner extends Model
         $this->bgImgTitle = $bgImgTitle;
         $this->masterspeed = $masterspeed;
         $this->enabled = $enabled;
-        $this->created = $created;
-        $this->updated = $updated;
+        $this->transition = $transition;
+        $this->slotamount = $slotamount;
 
     }
 
