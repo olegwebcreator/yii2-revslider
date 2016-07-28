@@ -27,8 +27,8 @@
       <file leaf-file-name="Widget.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Widget.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="79" column="37" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
+            <state relative-caret-position="68">
+              <caret line="69" column="20" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
               <folding>
                 <element signature="e#39#47#0#PHP" expanded="true" />
               </folding>
@@ -201,12 +201,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1469649469913</updated>
-      <workItem from="1469649472843" duration="7558000" />
+      <workItem from="1469649472843" duration="7686000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7558000" />
+    <option name="totallyTimeSpent" value="7686000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="5" y="23" width="1260" height="699" extended-state="0" />
@@ -273,8 +273,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Widget.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="79" column="37" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
+        <state relative-caret-position="68">
+          <caret line="69" column="20" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
           <folding>
             <element signature="e#39#47#0#PHP" expanded="true" />
           </folding>

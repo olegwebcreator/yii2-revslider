@@ -66,7 +66,8 @@ class Widget extends \yii\base\Widget
             if ($item['enabled'] == 1)
             {
                 $banners[] = new Banner($item['id'], $item['title'], $item['bgImg'],
-                    $item['bgImgTitle'], $item['masterspeed'], $item['enabled']);
+                    $item['bgImgTitle'], $item['masterspeed'],
+                    $item['enabled'], $item['transition'], $item['slotamount']);
             }
         }
 
