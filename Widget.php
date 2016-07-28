@@ -74,7 +74,7 @@ class Widget extends \yii\base\Widget
         $content = ob_get_clean();
         echo Html::beginTag('div', $this->options) . "\n";
         echo Html::beginTag('div', $this->innerOptions) . "\n";
-
+        var_dump($banners);
         echo Html :: ul( $banners, [
                 'item' => function($item, $index)
                 {
