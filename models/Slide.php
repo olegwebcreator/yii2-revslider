@@ -13,13 +13,14 @@ class Slide extends Model
     public $slideNumber;
     public $data = [];
     public $options = [];
+    public $enabled;
 
-    public function __construct( $bannerId, $slideNumber, $data = null, $options = null )
+    public function __construct($slideNumber, $options = null, $data = null, $enabled)
     {
-        $this->bannerId = $bannerId;
         $this->slideNumber = $slideNumber;
-        $this->data = $data;
         $this->options = $options;
+        $this->data = $data;
+        $this->enabled = $enabled;
     }
 
     /**
@@ -28,7 +29,7 @@ class Slide extends Model
     public function rules()
     {
         return [
-            [['bannerId', 'slideNumber'], 'integer'],
+            [['slideNumber', 'enabled'], 'integer'],
         ];
     }
 

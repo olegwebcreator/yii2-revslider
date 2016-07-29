@@ -57,11 +57,14 @@ class Widget extends \yii\base\Widget
                     $item['enabled'], $item['transition'], $item['slotamount'], $item['slides']);
                 foreach ($item['slides'] as $slideItem)
                 {
-                    $slides[$item['id']][] = new Slide($item['id'], $slideItem['slideNumber']);
+                    if($slideItem['enabled'] == 1)
+                    {
+                        $slides[$item['id']][] = new Slide($item['id'], $slideItem['slideNumber'],
+                            $slideItem['options'], $slideItem['data']);
+                    }
                 }
             }
         }
-        var_dump($slides);
 
         $content = ob_get_clean();
 
@@ -69,11 +72,11 @@ class Widget extends \yii\base\Widget
             echo Html::beginTag('div', $this->innerOptions) . "\n";
 
                 echo Html :: ul( $banners, [
-                        'item' => function($item, $index)
+                        'item' => function($item, $index, $slides)
                         {
                             return Html::tag(
                                 'li',
-                                $this -> render('index', ['item'=>$item]),
+                                $this -> render('index', ['item'=>$item, 'slides' => $slides[$item['id']]]),
                                 [
                                     'data' => [
                                         'transition' => $item->transition,
