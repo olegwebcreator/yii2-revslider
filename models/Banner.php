@@ -41,7 +41,6 @@ class Banner extends Model
         $this->enabled = $enabled;
         $this->transition = $transition;
         $this->slotamount = $slotamount;
-
     }
 
     /**
