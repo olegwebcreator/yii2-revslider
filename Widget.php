@@ -57,12 +57,12 @@ class Widget extends \yii\base\Widget
                     $item['enabled'], $item['transition'], $item['slotamount'], $item['slides']);
                 foreach ($item['slides'] as $slideItem)
                 {
-                    $slides[$item['id']] = new Slide($item['id'], $slideItem['slideNumber']);
+                    $slides[$item['id']][] = new Slide($item['id'], $slideItem['slideNumber']);
                 }
             }
         }
         var_dump($slides);
-        
+
         $content = ob_get_clean();
 
         echo Html::beginTag('div', $this->options) . "\n";
