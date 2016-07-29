@@ -31,7 +31,7 @@ class Banner extends Model
      * @param null $slotamount
      */
     public function __construct( $id, $title, $bgImg, $bgImgTitle, $masterspeed,
-                                 $enabled = null, $transition = null, $slotamount = null)
+                                 $enabled = null, $transition = null, $slotamount = null, $slides = null )
     {
         $this->id = $id;
         $this->title = $title;
@@ -41,6 +41,7 @@ class Banner extends Model
         $this->enabled = $enabled;
         $this->transition = $transition;
         $this->slotamount = $slotamount;
+        $this->slides = $slides;
     }
 
     /**
@@ -49,8 +50,8 @@ class Banner extends Model
     public function rules()
     {
         return [
-            [['masterspeed', 'enabled', 'created', 'updated'], 'integer'],
-            [['title', 'bgImg', 'bgImgTitle'], 'string', 'max' => 255],
+            [['id', 'masterspeed', 'enabled', 'slotamount'], 'integer'],
+            [['title', 'bgImg', 'bgImgTitle', 'transition'], 'string', 'max' => 255],
         ];
     }
 

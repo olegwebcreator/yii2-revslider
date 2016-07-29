@@ -9,7 +9,6 @@
 			"bgrepeat" => "no-repeat"
 		]
 	]) . "\n";
-
 	echo Html::beginTag("div", ["class" => "slider-caption container"]) . "\n";
 
 	foreach ( $item -> slides as $slide )

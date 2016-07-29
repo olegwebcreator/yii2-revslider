@@ -53,7 +53,11 @@ class Widget extends \yii\base\Widget
             {
                 $banners[] = new Banner($item['id'], $item['title'], $item['bgImg'],
                     $item['bgImgTitle'], $item['masterspeed'],
-                    $item['enabled'], $item['transition'], $item['slotamount']);
+                    $item['enabled'], $item['transition'], $item['slotamount'], $item['slides']);
+                foreach ($item['slides'] as $slide)
+                {
+                    var_dump($slide);
+                }
             }
         }
 
