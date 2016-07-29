@@ -13,7 +13,7 @@
 
 	foreach ( $item -> slides as $slide )
 	{
-        var_dump($slide);
+
         /*
         $dataOptions = [];
 
