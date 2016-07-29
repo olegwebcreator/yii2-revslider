@@ -52,9 +52,6 @@ class Widget extends \yii\base\Widget
         {
             if ($item['enabled'] == 1)
             {
-                $banners[] = new Banner($item['id'], $item['title'], $item['bgImg'],
-                    $item['bgImgTitle'], $item['masterspeed'],
-                    $item['enabled'], $item['transition'], $item['slotamount'], $item['slides']);
                 foreach ($item['slides'] as $slideItem)
                 {
                     if($slideItem['enabled'] == 1)
@@ -63,20 +60,23 @@ class Widget extends \yii\base\Widget
                             $slideItem['options'], $slideItem['data']);
                     }
                 }
+                $banners[] = new Banner($item['id'], $item['title'], $item['bgImg'],
+                    $item['bgImgTitle'], $item['masterspeed'],
+                    $item['enabled'], $item['transition'], $item['slotamount'], $slides[$item['id']]);
             }
         }
-
+        var_dump($banners);
         $content = ob_get_clean();
 
         echo Html::beginTag('div', $this->options) . "\n";
             echo Html::beginTag('div', $this->innerOptions) . "\n";
 
                 echo Html :: ul( $banners, [
-                        'item' => function($item, $index, $slides)
+                        'item' => function($item, $index)
                         {
                             return Html::tag(
                                 'li',
-                                $this -> render('index', ['item'=>$item, 'slides' => $slides[$item['id']]]),
+                                $this -> render('index', ['item'=>$item]),
                                 [
                                     'data' => [
                                         'transition' => $item->transition,
