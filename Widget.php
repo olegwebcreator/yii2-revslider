@@ -46,6 +46,7 @@ class Widget extends \yii\base\Widget
     public function run()
     {
         $banners = [];
+        $slides = [];
 
         foreach ($this->items as $item)
         {
@@ -54,13 +55,14 @@ class Widget extends \yii\base\Widget
                 $banners[] = new Banner($item['id'], $item['title'], $item['bgImg'],
                     $item['bgImgTitle'], $item['masterspeed'],
                     $item['enabled'], $item['transition'], $item['slotamount'], $item['slides']);
-                foreach ($item['slides'] as $slide)
+                foreach ($item['slides'] as $slideItem)
                 {
-                    var_dump($slide);
+                    $slides[$item['id']] = new Slide($item['id'], $slideItem['slideNumber']);
                 }
             }
         }
-
+        var_dump($slides);
+        
         $content = ob_get_clean();
 
         echo Html::beginTag('div', $this->options) . "\n";
