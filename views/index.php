@@ -10,9 +10,11 @@
 		]
 	]) . "\n";
 	echo Html::beginTag("div", ["class" => "slider-caption container"]) . "\n";
-/*
+
 	foreach ( $item -> slides as $slide )
 	{
+        var_dump($slide);
+        /*
         $dataOptions = [];
 
         if ( $slide -> hoffset )
@@ -78,8 +80,8 @@
 			echo Html :: endTag( "span" ) . "\n";
 		}
         echo Html::endTag("div") . "\n";
-	}
-*/
+	*/
+    }
 	echo Html::endTag("div") . "\n";
 ?>
 
