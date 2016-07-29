@@ -52,23 +52,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
               <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-              <folding>
-                <marker date="1469836447000" expanded="true" signature="402:478" ph="{...}" />
-                <marker date="1469836447000" expanded="true" signature="509:577" ph="{...}" />
-                <marker date="1469836447000" expanded="true" signature="608:676" ph="{...}" />
-                <marker date="1469836447000" expanded="true" signature="711:787" ph="{...}" />
-                <marker date="1469836447000" expanded="true" signature="822:898" ph="{...}" />
-                <marker date="1469836447000" expanded="true" signature="934:1012" ph="{...}" />
-                <marker date="1469836447000" expanded="true" signature="1050:1132" ph="{...}" />
-                <marker date="1469836447000" expanded="true" signature="1171:1255" ph="{...}" />
-                <marker date="1469836447000" expanded="true" signature="1298:1390" ph="{...}" />
-                <marker date="1469836447000" expanded="true" signature="1420:1596" ph="..." />
-                <marker date="1469836447000" expanded="true" signature="1428:1595" ph="..." />
-                <marker date="1469836447000" expanded="true" signature="1635:1730" ph="{...}" />
-                <marker date="1469836447000" expanded="true" signature="1761:1863" ph="{...}" />
-                <marker date="1469836447000" expanded="true" signature="1891:1998" ph="{...}" />
-                <marker date="1469836447000" expanded="true" signature="2022:2373" ph="{...}" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -299,23 +283,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding>
-            <marker date="1469836447000" expanded="true" signature="402:478" ph="{...}" />
-            <marker date="1469836447000" expanded="true" signature="509:577" ph="{...}" />
-            <marker date="1469836447000" expanded="true" signature="608:676" ph="{...}" />
-            <marker date="1469836447000" expanded="true" signature="711:787" ph="{...}" />
-            <marker date="1469836447000" expanded="true" signature="822:898" ph="{...}" />
-            <marker date="1469836447000" expanded="true" signature="934:1012" ph="{...}" />
-            <marker date="1469836447000" expanded="true" signature="1050:1132" ph="{...}" />
-            <marker date="1469836447000" expanded="true" signature="1171:1255" ph="{...}" />
-            <marker date="1469836447000" expanded="true" signature="1298:1390" ph="{...}" />
-            <marker date="1469836447000" expanded="true" signature="1420:1596" ph="..." />
-            <marker date="1469836447000" expanded="true" signature="1428:1595" ph="..." />
-            <marker date="1469836447000" expanded="true" signature="1635:1730" ph="{...}" />
-            <marker date="1469836447000" expanded="true" signature="1761:1863" ph="{...}" />
-            <marker date="1469836447000" expanded="true" signature="1891:1998" ph="{...}" />
-            <marker date="1469836447000" expanded="true" signature="2022:2373" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>

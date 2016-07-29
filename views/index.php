@@ -10,48 +10,46 @@
 		]
 	]) . "\n";
 	echo Html::beginTag("div", ["class" => "slider-caption container"]) . "\n";
-
+var_dump($item->slides);
 	foreach ( $item -> slides as $slide )
 	{
-
-        /*
         $dataOptions = [];
 
         if ( $slide -> hoffset )
         {
             $dataOptions["offset"] = $slide -> hoffset;
         }
-        if ( $slide -> dataX )
+        if ( $slide -> x )
         {
-            $dataOption["x"] = $slide -> dataX;
+            $dataOption["x"] = $slide -> x;
         }
-        if ( $slide -> dataY )
+        if ( $slide -> y )
         {
-            $dataOption["y"] = $slide -> dataY;
+            $dataOption["y"] = $slide -> y;
         }
         if ( $slide -> dataSpeed )
         {
-            $dataOption["speed"] = $slide -> dataSpeed;
+            $dataOption["speed"] = $slide -> speed;
         }
-        if ( $slide -> dataStart )
+        if ( $slide -> start )
         {
-            $dataOption["start"] = $slide -> dataStart;
+            $dataOption["start"] = $slide -> start;
         }
-        if ( $slide -> dataEasing )
+        if ( $slide -> easing )
         {
-            $dataOption["easing"] = $slide -> dataEasing;
+            $dataOption["easing"] = $slide -> easing;
         }
-        if ( $slide -> dataEndspeed )
+        if ( $slide -> endspeed )
         {
-            $dataOption["endspeed"] = $slide -> dataEndspeed;
+            $dataOption["endspeed"] = $slide -> endspeed;
         }
-        if ( $slide -> dataEndeasing )
+        if ( $slide -> endeasing )
         {
-            $dataOption["endeasing"] = $slide -> dataEndeasing;
+            $dataOption["endeasing"] = $slide -> endeasing;
         }
-        if ( $slide -> dataCaptionHidden )
+        if ( $slide -> captionHidden )
         {
-            $dataOption["captionhidden"] = $slide -> dataCaptionHidden;
+            $dataOption["captionhidden"] = $slide -> captionHidden;
         }
 
         echo Html::beginTag("div", ["class" => "tp-caption rs-caption-" .
@@ -80,7 +78,6 @@
 			echo Html :: endTag( "span" ) . "\n";
 		}
         echo Html::endTag("div") . "\n";
-	*/
     }
 	echo Html::endTag("div") . "\n";
 ?>
