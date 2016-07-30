@@ -17,13 +17,13 @@ class Widget extends \yii\base\Widget
      * @var array the HTML attributes for the widget container tag.
      * @see \yii\helpers\Html::renderTagAttributes() for details on how attributes are being rendered.
      */
-    public $options = ['class' => 'fullscreenbanner-container'];
+    public $options = ['class' => 'testfullscreenbanner-container'];
 
     /**
      * @var array the HTML attributes for widget inner container tag.
      * @see \yii\helpers\Html::renderTagAttributes() for details on how attributes are being rendered.
      */
-    public $innerOptions = ['class' => 'fullscreenbanner'];
+    public $innerOptions = ['class' => 'testfullscreenbanner'];
 
     /**
      * @var array items for banner
