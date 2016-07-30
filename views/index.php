@@ -27,12 +27,12 @@
             $slide -> slideNumber . " sft" . ( $slide -> slideNumber == "1" ? " start" : "" ),
             "data" => $dataOptions]) . "\n";
 
-        if ( $slide -> img )
-		{
-		    echo Html :: img( $slide -> img ,[ "alt" => $slide -> imgTitle ] ) . "\n";
-        }
-
         $options = $slide->options;
+
+        if (isset($options["img"]))
+		{
+		    echo Html :: img( $options["img"] ,[ "alt" => ($options["imgTitle"] ? $options["imgTitle"] : "") ] ) . "\n";
+        }
 
         if (isset($options["title"]))
 		{
