@@ -14,6 +14,7 @@ class Slide extends Model
     public $data = [];
     public $options = [];
     public $enabled;
+    private $hoffset;
 
     public function __construct($slideNumber, $options = null, $data = null, $enabled)
     {
@@ -21,6 +22,7 @@ class Slide extends Model
         $this->options = $options;
         $this->data = $data;
         $this->enabled = $enabled;
+        $this->hoffset = $data["hoffset"];
     }
 
     /**
