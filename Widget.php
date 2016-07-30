@@ -60,6 +60,7 @@ class Widget extends \yii\base\Widget
                             $slideItem['options'], $slideItem['data'], $slideItem['enabled']);
                     }
                 }
+                var_dump($slides[$item['id']]);
                 $banners[] = new Banner($item['id'], $item['title'], $item['bgImg'],
                     $item['bgImgTitle'], $item['masterspeed'],
                     $item['enabled'], $item['transition'], $item['slotamount'], $slides[$item['id']]);
