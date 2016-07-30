@@ -22,7 +22,7 @@
                 $dataOptions[$key] = $data;
             }
         }
-        var_dump($dataOptions);
+
         /*
         echo Html::beginTag("div", ["class" => "tp-caption rs-caption-" .
             $slide -> slideNumber . " sft" . ( $slide -> slideNumber == "1" ? " start" : "" ),
