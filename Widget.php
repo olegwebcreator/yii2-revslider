@@ -56,11 +56,11 @@ class Widget extends \yii\base\Widget
                 {
                     if($slideItem['enabled'] == 1)
                     {
-                        $slides[$item['id']][] = new Slide($item['id'], $slideItem['slideNumber'],
+                        $slides[$item['id']][] = new Slide($slideItem['slideNumber'],
                             $slideItem['options'], $slideItem['data'], $slideItem['enabled']);
                     }
                 }
-                var_dump($slides[$item['id']]);
+         
                 $banners[] = new Banner($item['id'], $item['title'], $item['bgImg'],
                     $item['bgImgTitle'], $item['masterspeed'],
                     $item['enabled'], $item['transition'], $item['slotamount'], $slides[$item['id']]);
