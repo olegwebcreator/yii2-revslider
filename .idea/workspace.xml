@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="08adff38-a69e-4f61-8a13-41d9ead2e541" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Slide.php" afterPath="$PROJECT_DIR$/models/Slide.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.php" afterPath="$PROJECT_DIR$/views/index.php" />
     </list>
     <ignored path="yii2-revslider.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,7 +52,23 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
               <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-              <folding />
+              <folding>
+                <marker date="1469838516000" expanded="true" signature="431:507" ph="{...}" />
+                <marker date="1469838516000" expanded="true" signature="534:598" ph="{...}" />
+                <marker date="1469838516000" expanded="true" signature="625:689" ph="{...}" />
+                <marker date="1469838516000" expanded="true" signature="724:796" ph="{...}" />
+                <marker date="1469838516000" expanded="true" signature="827:899" ph="{...}" />
+                <marker date="1469838516000" expanded="true" signature="931:1005" ph="{...}" />
+                <marker date="1469838516000" expanded="true" signature="1039:1117" ph="{...}" />
+                <marker date="1469838516000" expanded="true" signature="1152:1232" ph="{...}" />
+                <marker date="1469838516000" expanded="true" signature="1271:1359" ph="{...}" />
+                <marker date="1469838516000" expanded="true" signature="1389:1565" ph="..." />
+                <marker date="1469838516000" expanded="true" signature="1397:1564" ph="..." />
+                <marker date="1469838516000" expanded="true" signature="1604:1699" ph="{...}" />
+                <marker date="1469838516000" expanded="true" signature="1730:1832" ph="{...}" />
+                <marker date="1469838516000" expanded="true" signature="1860:1967" ph="{...}" />
+                <marker date="1469838516000" expanded="true" signature="1991:2342" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -282,7 +299,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding />
+          <folding>
+            <marker date="1469838516000" expanded="true" signature="431:507" ph="{...}" />
+            <marker date="1469838516000" expanded="true" signature="534:598" ph="{...}" />
+            <marker date="1469838516000" expanded="true" signature="625:689" ph="{...}" />
+            <marker date="1469838516000" expanded="true" signature="724:796" ph="{...}" />
+            <marker date="1469838516000" expanded="true" signature="827:899" ph="{...}" />
+            <marker date="1469838516000" expanded="true" signature="931:1005" ph="{...}" />
+            <marker date="1469838516000" expanded="true" signature="1039:1117" ph="{...}" />
+            <marker date="1469838516000" expanded="true" signature="1152:1232" ph="{...}" />
+            <marker date="1469838516000" expanded="true" signature="1271:1359" ph="{...}" />
+            <marker date="1469838516000" expanded="true" signature="1389:1565" ph="..." />
+            <marker date="1469838516000" expanded="true" signature="1397:1564" ph="..." />
+            <marker date="1469838516000" expanded="true" signature="1604:1699" ph="{...}" />
+            <marker date="1469838516000" expanded="true" signature="1730:1832" ph="{...}" />
+            <marker date="1469838516000" expanded="true" signature="1860:1967" ph="{...}" />
+            <marker date="1469838516000" expanded="true" signature="1991:2342" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

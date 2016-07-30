@@ -13,8 +13,9 @@
 
 	foreach ( $item -> slides as $slide )
 	{
+        var_dump($slide);
         $dataOptions = [];
-
+        /*
         if ( $slide -> hoffset )
         {
             $dataOptions["offset"] = $slide -> hoffset;
@@ -78,6 +79,7 @@
 			echo Html :: endTag( "span" ) . "\n";
 		}
         echo Html::endTag("div") . "\n";
+        */
     }
 
 	echo Html::endTag("div") . "\n";
