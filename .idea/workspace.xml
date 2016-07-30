@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08adff38-a69e-4f61-8a13-41d9ead2e541" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.php" afterPath="$PROJECT_DIR$/views/index.php" />
-    </list>
+    <list default="true" id="08adff38-a69e-4f61-8a13-41d9ead2e541" name="Default" comment="" />
     <ignored path="yii2-revslider.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
