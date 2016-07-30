@@ -13,7 +13,8 @@
 
 	foreach ( $item -> slides as $slide )
 	{
-        var_dump($slide);
+        var_dump($slide->data);
+        var_dump($slide->options);
         $dataOptions = [];
         /*
         if ( $slide -> hoffset )
