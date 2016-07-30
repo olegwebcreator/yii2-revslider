@@ -11,6 +11,7 @@
 	]) . "\n";
 	echo Html::beginTag("div", ["class" => "slider-caption container"]) . "\n";
 var_dump($item->slides);
+/*
 	foreach ( $item -> slides as $slide )
 	{
         $dataOptions = [];
@@ -79,6 +80,7 @@ var_dump($item->slides);
 		}
         echo Html::endTag("div") . "\n";
     }
+*/
 	echo Html::endTag("div") . "\n";
 ?>
 
