@@ -9,7 +9,7 @@
 			"bgrepeat" => "no-repeat"
 		]
 	]) . "\n";
-	echo Html::beginTag("div", ["class" => "slider-caption container"]) . "\n";
+	echo Html::beginTag("div", ["class" => "slider-caption123 container11"]) . "\n";
 var_dump($item->slides);
 /*
 	foreach ( $item -> slides as $slide )
