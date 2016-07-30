@@ -13,47 +13,17 @@
 
 	foreach ( $item -> slides as $slide )
 	{
-        var_dump($slide->data);
-        var_dump($slide->options);
         $dataOptions = [];
-        /*
-        if ( $slide -> hoffset )
-        {
-            $dataOptions["offset"] = $slide -> hoffset;
-        }
-        if ( $slide -> x )
-        {
-            $dataOption["x"] = $slide -> x;
-        }
-        if ( $slide -> y )
-        {
-            $dataOption["y"] = $slide -> y;
-        }
-        if ( $slide -> dataSpeed )
-        {
-            $dataOption["speed"] = $slide -> speed;
-        }
-        if ( $slide -> start )
-        {
-            $dataOption["start"] = $slide -> start;
-        }
-        if ( $slide -> easing )
-        {
-            $dataOption["easing"] = $slide -> easing;
-        }
-        if ( $slide -> endspeed )
-        {
-            $dataOption["endspeed"] = $slide -> endspeed;
-        }
-        if ( $slide -> endeasing )
-        {
-            $dataOption["endeasing"] = $slide -> endeasing;
-        }
-        if ( $slide -> captionHidden )
-        {
-            $dataOption["captionhidden"] = $slide -> captionHidden;
-        }
 
+        foreach($slide->data as $key => $data)
+        {
+            if(isset($data))
+            {
+                $dataOptions[$key] = $data;
+            }
+        }
+        var_dump($dataOptions);
+        /*
         echo Html::beginTag("div", ["class" => "tp-caption rs-caption-" .
             $slide -> slideNumber . " sft" . ( $slide -> slideNumber == "1" ? " start" : "" ),
             "data" => $dataOptions]) . "\n";
