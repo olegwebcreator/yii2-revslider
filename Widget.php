@@ -17,13 +17,13 @@ class Widget extends \yii\base\Widget
      * @var array the HTML attributes for the widget container tag.
      * @see \yii\helpers\Html::renderTagAttributes() for details on how attributes are being rendered.
      */
-    public $options = ['class' => 'testfullscreenbanner-container'];
+    public $options = ['class' => 'fullscreenbanner-container'];
 
     /**
      * @var array the HTML attributes for widget inner container tag.
      * @see \yii\helpers\Html::renderTagAttributes() for details on how attributes are being rendered.
      */
-    public $innerOptions = ['class' => 'testfullscreenbanner'];
+    public $innerOptions = ['class' => 'fullscreenbanner'];
 
     /**
      * @var array items for banner
@@ -60,7 +60,7 @@ class Widget extends \yii\base\Widget
                             $slideItem['options'], $slideItem['data'], $slideItem['enabled']);
                     }
                 }
-         
+
                 $banners[] = new Banner($item['id'], $item['title'], $item['bgImg'],
                     $item['bgImgTitle'], $item['masterspeed'],
                     $item['enabled'], $item['transition'], $item['slotamount'], $slides[$item['id']]);

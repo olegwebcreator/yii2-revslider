@@ -9,7 +9,7 @@
 			"bgrepeat" => "no-repeat"
 		]
 	]) . "\n";
-	echo Html::beginTag("div", ["class" => "slider-caption123 container11"]) . "\n";
+	echo Html::beginTag("div", ["class" => "slider-caption container"]) . "\n";
 
 	foreach ( $item -> slides as $slide )
 	{
@@ -23,7 +23,6 @@
             }
         }
 
-        /*
         echo Html::beginTag("div", ["class" => "tp-caption rs-caption-" .
             $slide -> slideNumber . " sft" . ( $slide -> slideNumber == "1" ? " start" : "" ),
             "data" => $dataOptions]) . "\n";
@@ -33,24 +32,25 @@
 		    echo Html :: img( $slide -> img ,[ "alt" => $slide -> imgTitle ] ) . "\n";
         }
 
-        if ( $slide -> title)
+        $options = $slide->options;
+
+        if (isset($options["title"]))
 		{
-		    echo Html :: tag( "div", $slide -> title, [ "class" => "banner-title" ] ) . "\n";
+		    echo Html :: tag( "div", $options["title"], [ "class" => "banner-title" ] ) . "\n";
         }
-		if ( $slide -> subtitle )
+		if (isset($options["subtitle"]))
 		{
-		    echo Html :: tag( "div", $slide -> subtitle, [ "class" => "banner-subtitle" ] ) ."\n";
+		    echo Html :: tag( "div", $options["subtitle"], [ "class" => "banner-subtitle" ] ) ."\n";
         }
-		if ( $slide -> link )
+		if (isset($options["link"]))
 		{
 		    echo Html :: beginTag ( "span", [ "class" => "page-scroll" ] ) . "\n";
             echo "<a target=\"_blank\" class=\"btn primary-btn\" 
-                href=\"" .$slide -> link. "\">". Yii :: t( "app", "More" ) .
+                href=\"" . $options["link"] . "\">". Yii :: t( "app", "More" ) .
                 "<i class=\"glyphicon glyphicon-chevron-right\"></i></a>" . "\n";
 			echo Html :: endTag( "span" ) . "\n";
 		}
         echo Html::endTag("div") . "\n";
-        */
     }
 
 	echo Html::endTag("div") . "\n";
