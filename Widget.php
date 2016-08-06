@@ -108,5 +108,6 @@ class Widget extends \yii\base\Widget
             });
         });
         ");
+        SliderAsset::register($view);
     }
 }
