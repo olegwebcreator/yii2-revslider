@@ -7,7 +7,7 @@ use yii\web\View;
 
 class SliderAsset extends AssetBundle
 {
-    public $sourcePath = '@webcreator/yii2-revslider/assets';
+    //public $sourcePath = '@webcreator/yii2-revslider/assets';
     public $depends = [
         'yii\web\JqueryAsset'
     ];
