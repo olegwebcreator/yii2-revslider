@@ -11,7 +11,8 @@ class SliderAsset extends AssetBundle
     public $js = [
         'plugins/jquery-ui/jquery-ui.js',
         'plugins/rs-plugin/js/jquery.themepunch.tools.min.js',
-        'plugins/rs-plugin/js/jquery.themepunch.revolution.min.js'
+        'plugins/rs-plugin/js/jquery.themepunch.revolution.min.js',
+        'custom.js'
     ];
     public $depends = [
         'yii\web\JqueryAsset'
