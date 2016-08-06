@@ -91,8 +91,9 @@ class Widget extends \yii\base\Widget
         echo Html::endTag('div') . "\n";
         
         $this->registerJs(
-        //============================== RS-SLIDER =========================
-            "jQuery(document).ready(function() {
+            "
+            //============================== RS-SLIDER =========================
+            jQuery(document).ready(function() {
                 jQuery('." . $this->innerOptions . "').revolution({
                     delay: 15000,
                     startwidth: 1170,
