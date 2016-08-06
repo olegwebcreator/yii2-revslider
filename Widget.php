@@ -89,10 +89,11 @@ class Widget extends \yii\base\Widget
                 echo $content;
             echo Html::endTag('div') . "\n";
         echo Html::endTag('div') . "\n";
+
         $view = $this->view;
         //$view->registerJs("$('#{$id}').cslider({$options});");
 
-        $view->registerJsFile("
+        $this->registerJsFile("
         jQuery(document).ready(function() {
             jQuery('.fullscreenbanner').revolution({
                 delay: 15000,
