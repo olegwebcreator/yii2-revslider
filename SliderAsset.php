@@ -13,6 +13,9 @@ class SliderAsset extends AssetBundle
         'plugins/rs-plugin/js/jquery.themepunch.revolution.min.js',
         'custom.js'
     ];
+    public $css = [
+        'plugins/rs-plugin/css/settings.css'
+    ];
     public $depends = [
         'yii\web\JqueryAsset'
     ];
