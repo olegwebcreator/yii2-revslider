@@ -81,7 +81,7 @@ class Widget extends \yii\base\Widget
                                     'data' => [
                                         'transition' => $item->transition,
                                         'slotamount' => $item->slotamount,
-                                        'masterspeed' => $item -> masterspeed,
+                                        'masterspeed' => $item->masterspeed,
                                         'title' => $item -> title
                                     ]
                                 ] );
@@ -89,24 +89,6 @@ class Widget extends \yii\base\Widget
                 echo $content;
             echo Html::endTag('div') . "\n";
         echo Html::endTag('div') . "\n";
-        
-        $this->registerJs(
-            "
-             jQuery(document).ready(function() {
-                jQuery('." . $this->innerOptions . "').revolution({
-                    delay: 15000,
-                    startwidth: 1170,
-                    startheight: 500,
-                    fullWidth: 'on',
-                    fullScreen: 'off',
-                    hideCaptionAtLimit: '',
-                    dottedOverlay: 'twoxtwo',
-                    navigationStyle: 'preview4',
-                    fullScreenOffsetContainer: '',
-                    hideTimerBar:'on',
-                });
-            });"
-        );
-
+        $this->registerJsFile('assets/script.js');
     }
 }
