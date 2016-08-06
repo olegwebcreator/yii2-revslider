@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08adff38-a69e-4f61-8a13-41d9ead2e541" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.php" afterPath="$PROJECT_DIR$/views/index.php" />
-    </list>
+    <list default="true" id="08adff38-a69e-4f61-8a13-41d9ead2e541" name="Default" comment="" />
     <ignored path="yii2-revslider.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -216,7 +214,7 @@
     <option name="totallyTimeSpent" value="14377000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="60" width="1260" height="699" extended-state="1" />
+    <frame x="-9" y="60" width="1260" height="699" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
