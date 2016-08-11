@@ -3,7 +3,6 @@
 namespace webcreator\revslider;
 
 use yii\web\AssetBundle;
-use yii\web\View;
 
 class SliderAsset extends AssetBundle
 {
@@ -11,7 +10,7 @@ class SliderAsset extends AssetBundle
     public $js = [
         'plugins/rs-plugin/js/jquery.themepunch.tools.min.js',
         'plugins/rs-plugin/js/jquery.themepunch.revolution.min.js',
-        'custom.js'
+        //'custom.js'
     ];
     public $css = [
         'plugins/rs-plugin/css/settings.css',

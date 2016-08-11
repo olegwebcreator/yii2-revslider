@@ -10,6 +10,6 @@ jQuery(document).ready(function() {
 		dottedOverlay: "twoxtwo",
 		navigationStyle: "preview4",
 		fullScreenOffsetContainer: "",
-		hideTimerBar:"on",
+		hideTimerBar:"on"
 	});
 });
