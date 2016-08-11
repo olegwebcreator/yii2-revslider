@@ -96,7 +96,7 @@ class Widget extends \yii\base\Widget
 
         $view->registerJs('
             jQuery(document).ready(function() {
-                jQuery(".fullscreenbanner").revolution({
+                jQuery(".' . $this->innerOptions . '").revolution({
                     delay: 15000,
                     startwidth: 1170,
                     startheight: 500,
