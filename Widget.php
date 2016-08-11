@@ -96,7 +96,7 @@ class Widget extends \yii\base\Widget
 
         $view->registerJs('
             jQuery(document).ready(function() {
-                jQuery(".' . $this->innerOptions . '").revolution({
+                jQuery(".' . $this->innerOptions["class"]. '").revolution({
                     delay: 15000,
                     startwidth: 1170,
                     startheight: 500,
