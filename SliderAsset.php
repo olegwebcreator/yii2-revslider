@@ -14,7 +14,8 @@ class SliderAsset extends AssetBundle
         'custom.js'
     ];
     public $css = [
-        'plugins/rs-plugin/css/settings.css'
+        'plugins/rs-plugin/css/settings.css',
+        'custom.css'
     ];
     public $depends = [
         'yii\web\JqueryAsset'
