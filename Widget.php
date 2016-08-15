@@ -112,7 +112,6 @@ class Widget extends \yii\base\Widget
         $class = $this->innerOptions["class"];
         $options = Json::encode($this->clientOptions);
         $view = $this->view;
-        $view->registerJs("$('#{$id}').cslider({$options});");
         $view->registerJs("jQuery(document).ready(function() {
                 jQuery('.{$class}').revolution({$options});});");
         SliderAsset::register($view);
