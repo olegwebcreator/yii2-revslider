@@ -109,28 +109,12 @@ class Widget extends \yii\base\Widget
             echo Html::endTag('div') . "\n";
         echo Html::endTag('div') . "\n";
 
-        $view = $this->view;
-
-//        SliderAsset::register($view);
-
+        $class = $this->innerOptions["class"];
         $options = Json::encode($this->clientOptions);
-        var_dump($options);
-        $view->registerJs('
-            jQuery(document).ready(function() {
-                jQuery(".' . $this->innerOptions["class"]. '").revolution({
-                    delay: 15000,
-                    startwidth: 1170,
-                    startheight: 500,
-                    fullWidth: "on",
-                    fullScreen: "off",
-                    hideCaptionAtLimit: "",
-                    dottedOverlay: "twoxtwo",
-                    navigationStyle: "preview4",
-                    fullScreenOffsetContainer: "",
-                    hideTimerBar:"on",
-                });
-            });
-        ');
-
+        $view = $this->view;
+        $view->registerJs("$('#{$id}').cslider({$options});");
+        $view->registerJs("jQuery(document).ready(function() {
+                jQuery('.{$class}').revolution({$options});});");
+        SliderAsset::register($view);
     }
 }
