@@ -95,7 +95,7 @@ class Widget extends \yii\base\Widget
                         {
                             return Html::tag(
                                 'li',
-                                $this -> render('index', ['item'=>$item]),
+                                $this -> render('index', ['item' => $item]),
                                 [
                                     'data' => [
                                         'transition' => $item->transition,
@@ -105,10 +105,11 @@ class Widget extends \yii\base\Widget
                                     ]
                                 ] );
                         } ] ) . "\n";
-                echo $content;
+
             echo Html::endTag('div') . "\n";
         echo Html::endTag('div') . "\n";
-
+        echo $content;
+        
         $class = $this->innerOptions["class"];
         $options = Json::encode($this->clientOptions);
         $view = $this->view;

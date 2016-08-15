@@ -11,7 +11,7 @@
 	]) . "\n";
 	echo Html::beginTag("div", ["class" => "slider-caption container"]) . "\n";
 
-	foreach ( $item -> slides as $slide )
+	foreach ($item -> slides as $slide)
 	{
         $dataOptions = [];
 
@@ -24,31 +24,31 @@
         }
 
         echo Html::beginTag("div", ["class" => "tp-caption rs-caption-" .
-            $slide -> slideNumber . " sft" . ( $slide -> slideNumber == "1" ? " start" : "" ),
+            $slide -> slideNumber . " sft" . ($slide -> slideNumber == "1" ? " start" : ""),
             "data" => $dataOptions]) . "\n";
 
         $options = $slide->options;
 
         if (isset($options["img"]))
 		{
-		    echo Html :: img( $options["img"] ,[ "alt" => ($options["imgTitle"] ? $options["imgTitle"] : "") ] ) . "\n";
+		    echo Html::img($options["img"] ,["alt" => ($options["imgTitle"] ? $options["imgTitle"] : "")]) . "\n";
         }
 
         if (isset($options["title"]))
 		{
-		    echo Html :: tag( "div", $options["title"], [ "class" => "banner-title" ] ) . "\n";
+		    echo Html::tag("div", $options["title"], ["class" => "banner-title"]) . "\n";
         }
 		if (isset($options["subtitle"]))
 		{
-		    echo Html :: tag( "div", $options["subtitle"], [ "class" => "banner-subtitle" ] ) ."\n";
+		    echo Html::tag("div", $options["subtitle"], ["class" => "banner-subtitle"]) ."\n";
         }
 		if (isset($options["link"]))
 		{
-		    echo Html :: beginTag ( "span", [ "class" => "page-scroll" ] ) . "\n";
+		    echo Html::beginTag ("span", ["class" => "page-scroll"]) . "\n";
             echo "<a target=\"_blank\" class=\"btn primary-btn\" 
-                href=\"" . $options["link"] . "\">". Yii :: t( "app", "More" ) .
+                href=\"" . $options["link"] . "\">". Yii::t("app", "More") .
                 "<i class=\"glyphicon glyphicon-chevron-right\"></i></a>" . "\n";
-			echo Html :: endTag( "span" ) . "\n";
+			echo Html::endTag("span") . "\n";
 		}
         echo Html::endTag("div") . "\n";
     }
