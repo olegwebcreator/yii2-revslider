@@ -9,8 +9,12 @@ use webcreator\revslider\models\Banner;
 use webcreator\revslider\models\Slide;
 
 /**
- * This is just an example.
+ * \webcreator\revslider\Widget is a content slider with different animations and positions for
+ * each slider element and background.
+ *
+ * @author Oleg Nazarov <oleg.webcreator@yandex.ru>
  */
+
 class Widget extends \yii\base\Widget
 {
     /**
@@ -26,6 +30,17 @@ class Widget extends \yii\base\Widget
     public $innerOptions = ['class' => 'fullscreenbanner'];
 
     /**
+    * @var array the options for the widget. Possible options:
+    *
+    * - current: integer, a number of current slide.
+    * - bgincrement: integer, an increment the background position (parallax effect) when sliding.
+    * - autoplay: boolean, whether to display the slideshow.
+    * - interval: integer, a time between transitions.
+    */
+    public $clientOptions = [];
+
+
+    /**
      * @var array items for banner
      */
     public $items = [];
@@ -36,6 +51,10 @@ class Widget extends \yii\base\Widget
     public function init()
     {
         parent::init();
+
+        if (isset($this->clientOptions['current']) && $this->clientOptions['current'] > 0) {
+            $this->clientOptions['current'] = $this->clientOptions['current'] - 1;
+        }
 
         ob_start();
     }
@@ -92,8 +111,10 @@ class Widget extends \yii\base\Widget
 
         $view = $this->view;
 
-        SliderAsset::register($view);
+//        SliderAsset::register($view);
 
+        $options = Json::encode($this->clientOptions);
+        var_dump($options);
         $view->registerJs('
             jQuery(document).ready(function() {
                 jQuery(".' . $this->innerOptions["class"]. '").revolution({
