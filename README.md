@@ -50,9 +50,9 @@ Slider::begin([
     "items" => [
         [
             "id" => 1,
-            "title" => "Dancewear Nona",
-            "bgImg" => "/img/home/banner-slider/slider-bg.jpg",
-            "bgImgTitle" => "Закрытие театрального сезона 2016",
+            "title" => "Slide title",
+            "bgImg" => "path to background image",
+            "bgImgTitle" => "Alt title for background image",
             "masterspeed" => 2000,
             "enabled" => 1,
             "transition" => "slidehorizontal",
@@ -61,8 +61,8 @@ Slider::begin([
                 [
                     "slideNumber" => 1,
                     "options" => [
-                        "img" => "/img/home/banner-slider/banner1.jpg",
-                        "imgTitle" => "Закрытие театрального сезона"
+                        "img" => "path to image",
+                        "imgTitle" => "Alt title for image"
                     ],
                     "data" => [
                         "hoffset" => 0,
@@ -79,9 +79,8 @@ Slider::begin([
                 [
                     "slideNumber" => 2,
                     "options" => [
-                        "title" => "Radasfera для друзей",
-                        "subtitle" => "Театрализованный показ от нашего бренда балетной одежды NONA<br/>при участии артистов Мариинского и Михайловского театров.<br/>
-Фуршет под аккомпанемент Simple Drums, BLTB, Ивана Ситникова<br/> и еще много приятных сюрпризов… "
+                        "title" => "Title",
+                        "subtitle" => "Subtitle"
                     ],
                     "data" => [
                         "hoffset" => 0,
@@ -96,7 +95,7 @@ Slider::begin([
                 [
                     "slideNumber" => 3,
                     "options" => [
-                        "title" => "<span>01/08/2016 пер. Пирогова 18</span>"
+                        "title" => "Title"
                     ],
                     "data" => [
                         "hoffset" => 0,
@@ -113,7 +112,7 @@ Slider::begin([
                 [
                     "slideNumber" => 4,
                     "options" => [
-                        "link" => "https://vk.com/dancewearnona"
+                        "link" => "link to page"
                     ],
                     "data" => [
                         "hoffset" => 0,
@@ -131,9 +130,9 @@ Slider::begin([
         ],
         [
             "id" => 2,
-            "title" => "Dancewear Nona",
-            "bgImg" => "/img/home/banner-slider/slider-bg.jpg",
-            "bgImgTitle" => "Конкурс на лучшее фуэте!",
+            "title" => "Slide title",
+            "bgImg" => "path to background image",
+            "bgImgTitle" => "Alt title for background image",
             "masterspeed" => 2000,
             "enabled" => 1,
             "transition" => "slidehorizontal",
@@ -142,8 +141,8 @@ Slider::begin([
                 [
                     "slideNumber" => 1,
                     "options" => [
-                        "img" => "/img/home/banner-slider/banner2.jpg",
-                        "imgTitle" => "Конкурс Nona"
+                        "img" => "path to image",
+                        "imgTitle" => "Alt title for image"
                     ],
                     "data" => [
                         "x" => 0,
@@ -158,7 +157,7 @@ Slider::begin([
                 [
                     "slideNumber" => 2,
                     "options" => [
-                        "title" => "Конкурс на лучшее фуэте!",
+                        "title" => "Title",
                     ],
                     "data" => [
                         "x" => 410,
@@ -173,8 +172,8 @@ Slider::begin([
                 [
                     "slideNumber" => 3,
                     "options" => [
-                        "title" => "Победитель получит сертификат от мастерской Radasfera номиналом 6000р. на пошив одежды бренда NONA!*",
-                        "subtitle" => "Вам нужно:<br/><ol><li>1. Снять себя на видео</li><li>2. Опубликовать фото с тегом #Nonafouette в своих социальных сетях (vkontakte, facebook, Instagram)</li><li>3. Набрать наибольшее количество лайков.</li></ol>Не упустите возможность! Покажите на что вы способны!"
+                        "title" => "Title",
+                        "subtitle" => "Subtitle"
                     ],
                     "data" => [
                         "x" => 410,
@@ -191,7 +190,7 @@ Slider::begin([
                 [
                     "slideNumber" => 4,
                     "options" => [
-                        "link" => "https://vk.com/radasferaevent"
+                        "link" => "link to page"
                     ],
                     "data" => [
                         "x" => 860,
@@ -209,9 +208,9 @@ Slider::begin([
         ],
         [
             "id" => 3,
-            "title" => "Dancewear Nona",
-            "bgImg" => "/img/home/banner-slider/slider-bg.jpg",
-            "bgImgTitle" => "Презентация бренда",
+            "title" => "Slide title",
+            "bgImg" => "path to background image",
+            "bgImgTitle" => "Alt title for background image",
             "masterspeed" => 2000,
             "enabled" => 1,
             "transition" => "slidehorizontal",
@@ -220,8 +219,8 @@ Slider::begin([
                 [
                     "slideNumber" => 1,
                     "options" => [
-                        "img" => "/img/home/banner-slider/banner3.jpg",
-                        "imgTitle" => "Презентация бренда Nona"
+                        "img" => "path to image",
+                        "imgTitle" => "alt image title"
                     ],
                     "data" => [
                         "x" => 0,
@@ -236,9 +235,8 @@ Slider::begin([
                 [
                     "slideNumber" => 2,
                     "options" => [
-                        "title" => "Презентация бренда состоится 1 августа в 19-00 по адресу: переулок Пирогова, 18. ",
-                        "subtitle" => "*Количество мест ограничено, поэтому спешите оказаться в списке гостей первыми.<br/>
-**Администрация оставляет за собой право выбора при составлении списка гостей."
+                        "title" => "Title",
+                        "subtitle" => "Subtitle"
                     ],
                     "data" => [
                         "hoffset" => 0,
@@ -254,7 +252,7 @@ Slider::begin([
                 [
                     "slideNumber" => 3,
                     "options" => [
-                        "title" => "<span>Совсем скоро вы сможете увидеть уникальную коллекцию одежды!</span>",
+                        "title" => "Title",
                     ],
                     "data" => [
                         "hoffset" => 0,
@@ -272,7 +270,7 @@ Slider::begin([
                 [
                     "slideNumber" => 4,
                     "options" => [
-                        "link" => "https://vk.com/wall-125107484_11"
+                        "link" => "link to page"
                     ],
                     "data" => [
                         "x" => 800,
