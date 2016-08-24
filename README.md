@@ -31,6 +31,7 @@ Once the extension is installed, simply use it in your code by  :
 
 There are a lot of parameters you can use in this widget. Here is the code for 3 slides with 4 section in each slide
 
+```php
 <?php
 use webcreator\revslider\Widget as Slider;
 Slider::begin([
@@ -291,5 +292,4 @@ Slider::begin([
 ]);
 Slider::end();
 ?>
-
-
+```
