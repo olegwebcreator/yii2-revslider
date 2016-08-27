@@ -17,6 +17,7 @@ class Slide extends Model
 
     public function __construct($slideNumber, $options = null, $data = null, $enabled)
     {
+        parent :: __construct();
         $this->slideNumber = $slideNumber;
         $this->options = $options;
         $this->data = $data;

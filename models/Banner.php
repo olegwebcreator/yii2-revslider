@@ -33,6 +33,7 @@ class Banner extends Model
     public function __construct( $id, $title, $bgImg, $bgImgTitle, $masterspeed,
                                  $enabled = null, $transition = null, $slotamount = null, $slides = null )
     {
+        parent :: __construct();
         $this->id = $id;
         $this->title = $title;
         $this->bgImg = $bgImg;
