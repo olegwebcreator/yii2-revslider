@@ -1,5 +1,4 @@
 <?php
-
 namespace webcreator\revslider;
 
 use yii\web\AssetBundle;
